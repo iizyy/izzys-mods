@@ -96,10 +96,8 @@ elements.ball.renderer = function (pixel, ctx) {
 
 //Basic particles
 //Electron plus light makes neutron very rarely
-if (!elements.electron.reactions) { elements.electron.reactions = {}; }
 elements.electric.reactions.light = { "elem1": "neutron", "elem2": null, "chance": 0.01 }; //
-// Neutron plus protons makes hydrogen
-if (!elements.proton.reactions) { elements.proton.reactions = {}; }
+// Neutron plus protons makes hydrogen 
 elements.proton.reactions.neutron = { "elem1": "hydrogen", "elem2": null, "chance": 0.25 }; //
 // Hydrogen plus protons makes helium
 elements.proton.reactions.hydrogen = { "elem1": "helium", "elem2": null, "chance": 0.1 }; //
